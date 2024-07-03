@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import ToggleNavContext from "@/components/context/ToggleNavContext";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -21,7 +22,12 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<ToggleNavContext>
-				<body className={poppins.className + " bg-gray-bg"}>{children}</body>
+				<body
+					className={poppins.className + " bg-gray-bg flex items-center justify-center py-10 px-3"}
+				>
+					<Header />
+					{children}
+				</body>
 			</ToggleNavContext>
 		</html>
 	);
