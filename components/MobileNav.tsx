@@ -7,6 +7,7 @@ const MobileNav = () => {
     const { openNav } = useContext(ToggleNavStatus);
     return (
         <motion.nav
+            initial={{ height: 0 }}
             animate={{ height: openNav ? 330 : 0 }}
             className={`overflow-hidden md:hidden shadow-2xl flex flex-col items-center gap-5 font-bold w-full bg-white h-screen rounded-3xl ${!openNav ? "p-0" : "p-4"
                 } `}
