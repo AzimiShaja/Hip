@@ -17,12 +17,14 @@ const Header = () => {
     return (
         <div className="flex flex-col w-full gap-3 items-center">
             <header className="w-[1400px] flex items-center justify-between bg-white rounded-3xl max-xl:w-full max-md:px-4 max-md:py-4">
-                <div className="flex md:px-5 items-center cursor-pointer">
+                <Link
+                    href="/"
+                    className="flex md:px-5 items-center cursor-pointer hover:text-orange-button transition-all"
+                >
                     <IoLogoXing size={50} />
                     <h1 className="text-xl font-extrabold">HIP</h1>
-                </div>
+                </Link>
                 <nav className="flex items-center gap-5 font-bold max-md:hidden">
-                    <CustomLink href="/" placeholder="Home" />
                     <CustomLink href="/products" placeholder="Products" />
                     <CustomLink href="/pricing" placeholder="Pricing" />
                     <CustomLink href="/signin" placeholder="Sign In" />
