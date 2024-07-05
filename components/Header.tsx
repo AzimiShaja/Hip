@@ -15,7 +15,7 @@ export const CustomLink = ({ href, placeholder }: { href: string; placeholder: s
 const Header = () => {
     const { setOpenNav, openNav } = useContext(ToggleNavStatus);
     return (
-        <div className="flex flex-col w-full gap-3 items-center">
+        <div className="flex flex-col w-full gap-3 items-center sticky top-10 z-[999]">
             <header className="w-[1400px] flex items-center justify-between bg-white rounded-3xl max-xl:w-full max-md:px-4 max-md:py-4">
                 <Link
                     href="/"
