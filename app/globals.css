@@ -5,3 +5,11 @@
 * {
    font-family: 'Poppins', sans-serif;
 }
+.card {
+   &:hover {
+      .icon  {
+         @apply rotate-[10deg] scale-125 transition-all;
+      }
+   }
+ 
+}
