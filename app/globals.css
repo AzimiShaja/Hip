@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 * {
-   font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .card {
-   &:hover {
-      .icon  {
-         @apply rotate-[10deg] scale-125 transition-all;
-      }
-   }
- 
+    &:hover {
+        .icon {
+            @apply rotate-[10deg] scale-125 transition-all;
+        }
+    }
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: 500px 300px 300px;
+    grid-template-rows: 300px;
 }
