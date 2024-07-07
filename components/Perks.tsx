@@ -13,7 +13,7 @@ const Label = ({ text, icon }: { text: string; icon: any }) => {
 };
 const Perks = () => {
     return (
-        <div className="xl:w-[1400px] w-full grid perks gap-5 py-10">
+        <div className="xl:w-[1400px] w-full grid xl:grid-cols-custom-1 perks gap-5 py-10">
             <div className="bg-gray-grid-1 text-white rounded-3xl xl:p-10 p-5 py-10 flex flex-col h-full justify-between gap-10">
                 <div className="flex flex-col gap-3">
                     <h1 className="xl:text-5xl text-3xl font-extrabold max-xl:text-center">

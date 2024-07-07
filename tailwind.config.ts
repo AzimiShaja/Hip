@@ -83,12 +83,12 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       gridTemplateColumns: {
-        "custom": "500px 300px 300px"
+        "custom": "500px 300px 300px",
+        "custom-1": "500px 1fr;"
       },
       gridTemplateRows: {
         "custom": "300px"
       },
-
     },
   },
   plugins: [ require("tailwindcss-animate") ],
