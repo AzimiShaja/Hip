@@ -18,3 +18,37 @@
     grid-template-columns: 500px 300px 300px;
     grid-template-rows: 300px;
 }
+main > div{
+    animation: open 1s;
+    /* transform: translateY(300px); */
+}
+.cards, .buttons{
+    animation: open 1.4s ease-in-out;
+}
+@keyframes open {
+    0% {
+        transform: translateY(300px);
+        opacity:0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+} 
+
+header {
+    animation: header 1s ease-in-out;
+}
+@keyframes header {
+    0% {
+        transform: translateY(-200px);
+        opacity:0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+.perks {
+   grid-template-columns: 500px 1fr;
+}
