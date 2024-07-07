@@ -29,7 +29,7 @@ const Footer = () => {
                 <BsGrid1X2Fill size={40} />
                 <h1 className="text-xl font-extrabold">HIP</h1>
             </div>
-            <div className="grid xl:grid-cols-3 w-full gap-10">
+            <div className="grid xl:grid-cols-3 w-full gap-2">
                 <CustomCard icon={<GiClick size={30} />} title="1 - Click-Installation" />
                 <CustomCard icon={<CheckCircle />} title="Free Available Plans" />
                 <CustomCard icon={<BiHeadphone size={30} />} title="24/7 Support" />

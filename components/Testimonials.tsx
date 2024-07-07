@@ -68,14 +68,14 @@ const Testimonials = () => {
                     bg={testimonial2}
                     title="EYTYS"
                     position="Eccomerce Manager"
-                    testimonial="Time-effective visual merchandising, Depict is super user-friendly and smart."
+                    testimonial="Time-effective visual merchandising, HIP is super user-friendly and smart."
                 />
                 <Testimonial
                     name="Cassandra Bäckman"
                     bg={testimonial3}
                     title="UNDERSTATMENT"
                     position="Ecommerce Manager"
-                    testimonial="Depict has revolutionized our workflow with AI capabilities to enhance our operations."
+                    testimonial="HIP has revolutionized our workflow with AI capabilities to enhance our operations."
                 />
             </Slider>
         </div>
