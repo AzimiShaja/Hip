@@ -2,9 +2,9 @@
 import Link from "next/link";
 import React, { useContext, useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { IoLogoXing } from "react-icons/io";
 import MobileNav from "./MobileNav";
 import { ToggleNavStatus } from "./context/ToggleNavContext";
+import { BsGrid1X2Fill } from "react-icons/bs";
 export const CustomLink = ({ href, placeholder }: { href: string; placeholder: string }) => {
     return (
         <Link href={href} className="font-bold hover:bg-gray-100 rounded-xl p-2 px-4 transition-all">
@@ -19,9 +19,9 @@ const Header = () => {
             <header className="w-[1400px] flex items-center justify-between bg-white rounded-3xl max-xl:w-full max-md:px-4 max-md:py-4">
                 <Link
                     href="/"
-                    className="flex md:px-5 items-center cursor-pointer hover:text-orange-button transition-all"
+                    className="flex md:px-5 items-center cursor-pointer hover:text-orange-button transition-all gap-3"
                 >
-                    <IoLogoXing size={50} />
+                    <BsGrid1X2Fill size={40} />
                     <h1 className="text-xl font-extrabold">HIP</h1>
                 </Link>
                 <nav className="flex items-center gap-5 font-bold max-md:hidden">
