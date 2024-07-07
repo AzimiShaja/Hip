@@ -24,7 +24,7 @@ const CustomCard = ({
 };
 const Cards = () => {
     return (
-        <div className="xl:w-[1400px] w-full py-10 rounded-3xl flex items-center justify-center flex-col gap-20">
+        <div className="xl:w-[1400px] cards w-full py-10 rounded-3xl flex items-center justify-center flex-col gap-20">
             <h1 className="lg:text-4xl md:text-2xl text-xl max-w-[600px] text-center font-bold">
                 Collections are your most important pages, but are frustrating to manage
             </h1>

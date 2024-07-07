@@ -5,7 +5,7 @@ import { PiStrategy } from "react-icons/pi";
 import { SiGoogleanalytics } from "react-icons/si";
 const Label = ({ text, icon }: { text: string; icon: any }) => {
     return (
-        <div className="flex bg-gray-grid-3 p-3 justify-center hover:scale-110 transition-all items-center gap-3 w-full rounded-xl cursor-default">
+        <div className="flex bg-gray-grid-3 p-3 hover:scale-110 transition-all items-center gap-3 w-full rounded-xl cursor-default">
             {icon}
             <h1 className="font-extrabold text-lg">{text}</h1>
         </div>
@@ -13,7 +13,7 @@ const Label = ({ text, icon }: { text: string; icon: any }) => {
 };
 const Perks = () => {
     return (
-        <div className="xl:w-[1400px] w-full grid lg:grid-cols-2 gap-5 py-10">
+        <div className="xl:w-[1400px] w-full grid perks gap-5 py-10">
             <div className="bg-gray-grid-1 text-white rounded-3xl xl:p-10 p-5 py-10 flex flex-col h-full justify-between gap-10">
                 <div className="flex flex-col gap-3">
                     <h1 className="xl:text-5xl text-3xl font-extrabold max-xl:text-center">
@@ -38,10 +38,10 @@ const Perks = () => {
                     />
                 </div>
             </div>
-            <div className="xl:p-10 bg-white rounded-3xl w-full">
+            <div className="xl:p-10 bg-white rounded-3xl min-w-full">
                 <img
                     src={fleecce2.src}
-                    className="shadow-2xl rounded-3xl w-full xl:hover:scale-110 duration-1000"
+                    className="shadow-2xl rounded-3xl min-w-full xl:hover:scale-110 duration-1000"
                 />
             </div>
         </div>

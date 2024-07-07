@@ -4,7 +4,7 @@ import img from "../assets/jackets.png";
 import img2 from "../assets/fleecce.jpg";
 const Hero = () => {
     return (
-        <div className="xl:w-[1400px] w-full grid max-lg:grid-cols-1 grid-cols-2 gap-10 p-10 rounded-3xl bg-white">
+        <main className="xl:w-[1400px] w-full grid max-lg:grid-cols-1 grid-cols-2 gap-10 p-10 rounded-3xl bg-white">
             <div className="flex flex-col items-start gap-14 justify-center">
                 <div className="flex items-center gap-2 bg-gray-bg w-fit p-3 rounded-xl">
                     <FaShopify size={20} />
@@ -18,7 +18,7 @@ const Hero = () => {
                         Curate content, Sort Products, & Track Data for Collection Pages
                     </p>
                 </div>
-                <div className="flex items-center gap-5 max-md:flex-col max-lg:w-full">
+                <div className="flex items-center gap-5 max-md:flex-col max-lg:w-full buttons">
                     <button className="bg-orange-button rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full">
                         Try for Free
                     </button>
@@ -34,7 +34,7 @@ const Hero = () => {
                     className="absolute top-0 right-[143px] -skew-x-6 hover:scale-90 duration-500 shadow-2xl w-[170px] max-xl:hidden"
                 />
             </div>
-        </div>
+        </main>
     )
 }
 

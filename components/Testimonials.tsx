@@ -54,7 +54,7 @@ const Testimonials = () => {
         pauseOnHover: true,
     };
     return (
-        <div className="slider-container xl:w-[1400px] w-full px-8">
+        <div className="slider-container xl:w-[1400px] w-full px-8 my-20">
             <Slider {...settings}>
                 <Testimonial
                     name="Hanny Eldbolm"
