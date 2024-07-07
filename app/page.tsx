@@ -1,6 +1,7 @@
 import Cards from "@/components/Cards";
 import Hero from "@/components/Hero";
 import Perks from "@/components/Perks";
+import Testimonials from "@/components/Testimonials";
 import React, { useState } from "react";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
 			<Hero />
 			<Cards />
 			<Perks />
+			<Testimonials />
 		</div>
 	);
 };
