@@ -84,10 +84,12 @@ const config = {
       },
       gridTemplateColumns: {
         "custom": "500px 300px 300px",
-        "custom-1": "500px 1fr;"
+        "custom-1": "500px 1fr",
+        "custom-2": "600px 1fr",
+        "custom-3": "1fr 600px"
       },
       gridTemplateRows: {
-        "custom": "300px"
+        "custom": "300px",
       },
     },
   },
