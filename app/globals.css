@@ -18,23 +18,27 @@
     grid-template-columns: 500px 300px 300px;
     grid-template-rows: 300px;
 }
-main > div{
+main > div,
+.products > div,
+.products > div > div,
+.pricing {
     animation: open 1s;
     /* transform: translateY(300px); */
 }
-.cards, .buttons{
+.cards,
+.buttons, footer{
     animation: open 1.4s ease-in-out;
 }
 @keyframes open {
     0% {
         transform: translateY(300px);
-        opacity:0;
+        opacity: 0;
     }
     100% {
         transform: translateY(0px);
         opacity: 100;
     }
-} 
+}
 
 header {
     animation: header 1s ease-in-out;
@@ -42,10 +46,14 @@ header {
 @keyframes header {
     0% {
         transform: translateY(-200px);
-        opacity:0;
+        opacity: 0;
     }
     100% {
         transform: translateY(0px);
         opacity: 100;
     }
+}
+
+.page-style {
+    @apply w-full py-5 flex items-center justify-center flex-col gap-10;
 }

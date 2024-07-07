@@ -7,7 +7,7 @@ import Testimonials from "@/components/Testimonials";
 
 const Home = () => {
 	return (
-		<div className="w-full py-5 flex items-center justify-center flex-col gap-10">
+		<div className="page-style">
 			<Hero />
 			<Cards />
 			<Perks />
