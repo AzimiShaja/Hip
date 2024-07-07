@@ -49,6 +49,3 @@ header {
         opacity: 100;
     }
 }
-.perks {
-   grid-template-columns: 500px 1fr;
-}
