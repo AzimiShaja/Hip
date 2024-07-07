@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-center gap-2">
                 <p className="text-gray-400 font-bold text-[12px]">© 2024 Hip. All rights reserved.</p>
-                <button className="text-gray-400 font-bold text-[12px]">Privacy Policy</button>
+                <button className="text-gray-400 font-bold text-[12px]">Privacy Policy - Terms and Conditions</button>
             </div>
         </footer>
     );
