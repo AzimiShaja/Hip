@@ -34,7 +34,7 @@ const Footer = () => {
                 <CustomCard icon={<CheckCircle />} title="Free Available Plans" />
                 <CustomCard icon={<BiHeadphone size={30} />} title="24/7 Support" />
             </div>
-            <div className="grid md:grid-cols-3  sm:grid-cols-2  gap-20 py-10">
+            <div className="grid md:grid-cols-3  grid-cols-2  gap-20 py-10">
                 <CustomNav link1="Home" link2="Product" link3="Pricing" />
                 <CustomNav link1="Customers" link2="Contact" link3="Sign In" />
                 <CustomNav link1="Our Story" link2="Career" link3="LinkedIn" />

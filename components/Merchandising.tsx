@@ -10,7 +10,7 @@ const Merchandising = () => {
                 <button className="bg-gray-grid-1 text-white rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full">
                     Try for Free
                 </button>
-                <button className="border border-black rounded-xl p-5 px-8 text-md hover:opacity-90 transition-all max-lg:w-full">
+                <button className="border border-black rounded-xl p-5 px-8 text-md hover:opacity-90 transition-all max-lg:w-full hover:bg-gray-grid-1 hover:text-white">
                     Book a demo
                 </button>
             </div>
