@@ -17,20 +17,23 @@ const Header = () => {
     return (
         <div className="flex flex-col w-full gap-3 items-center sticky top-10 z-[999]">
             <header className="w-[1400px] flex items-center justify-between bg-white rounded-3xl max-xl:w-full max-md:px-4 py-2 px-2 max-md:py-4">
-                <Link
+                <a
                     href="/"
                     className="flex md:px-5 items-center cursor-pointer hover:text-orange-button transition-all gap-3"
                 >
                     <BsGrid1X2Fill size={40} />
                     <h1 className="text-xl font-extrabold">HIP</h1>
-                </Link>
+                </a>
                 <nav className="flex items-center gap-5 font-bold max-md:hidden">
                     <CustomLink href="/products" placeholder="Products" />
                     <CustomLink href="/pricing" placeholder="Pricing" />
-                    <CustomLink href="/signin" placeholder="Sign In" />
-                    <button className="bg-orange-button rounded-3xl py-7 px-5 font-bold text-md text-white hover:opacity-90 transition-all">
+                    <CustomLink href="/login" placeholder="Sign In" />
+                    <Link
+                        href="/signup"
+                        className="bg-orange-button rounded-3xl py-7 px-5 font-bold text-md text-white hover:opacity-90 transition-all"
+                    >
                         Start for Free
-                    </button>
+                    </Link>
                 </nav>
                 <FaBars
                     onClick={() => setOpenNav(!openNav)}
