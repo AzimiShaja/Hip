@@ -5,7 +5,7 @@ import ToggleNavContext from "@/components/context/ToggleNavContext";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-	title: "HIP - Home",
+	title: "Hip - Visual Merchandising",
 	description: "HIP, the home of high quality products",
 };
 
