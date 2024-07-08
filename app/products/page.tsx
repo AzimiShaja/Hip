@@ -59,7 +59,7 @@ const CustomPerk = ({
             <div
                 className={`bg-gray-grid-1 text-white rounded-3xl xl:p-10 p-5 py-10 flex flex-col h-full justify-center gap-10`}
             >
-                <div className="flex flex-col gap-5 justify-center">
+                <div className="flex flex-col gap-5 justify-center max-xl:items-center">
                     {icon}
                     <div className="flex flex-col gap-5">
                         <h1 className="xl:text-6xl text-3xl font-extrabold max-xl:text-center">{title}</h1>
@@ -81,7 +81,7 @@ const CustomPerk = ({
             <div
                 className={`bg-gray-grid-1 text-white rounded-3xl xl:p-10 p-5 py-10 flex flex-col h-full justify-center gap-10`}
             >
-                <div className="flex flex-col gap-5 justify-center">
+                <div className="flex flex-col gap-5 justify-center max-xl:items-center">
                     {icon}
                     <div className="flex flex-col gap-5">
                         <h1 className="xl:text-6xl text-3xl font-extrabold max-xl:text-center">{title}</h1>
