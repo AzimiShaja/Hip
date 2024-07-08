@@ -16,9 +16,9 @@ const CustomCard = ({ icon, title }: { icon: any; title: string }) => {
 
 const CustomNav = ({ link1, link2, link3 }: { link1: string, link2: string, link3: string }) => {
     return (<div className="flex flex-col items-start text-white gap-5">
-        <Link href={`/ ${link1.toLowerCase() === "home" ? "/" : link1.toLowerCase()}`} className="font-bold hover:text-gray-grid-3 transition-all">{link1}</Link>
-        <Link href={`/${link3.toLowerCase()}`} className="font-bold hover:text-gray-grid-3 transition-all">{link3}</Link>
-        <Link href={`/${link2.toLowerCase()}`} className="font-bold hover:text-gray-grid-3 transition-all">{link2}</Link>
+        <Link href={`/`} className="font-bold hover:text-gray-grid-3 transition-all">{link1}</Link>
+        <Link href={`/`} className="font-bold hover:text-gray-grid-3 transition-all">{link3}</Link>
+        <Link href={`/`} className="font-bold hover:text-gray-grid-3 transition-all">{link2}</Link>
     </div>);
 }
 
