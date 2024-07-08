@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import { Check } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 const CustomPriceCard = ({
     type,
@@ -48,11 +49,11 @@ const CustomPriceCard = ({
                 </h1>
             </div>
             <p className="font-bold text-lg">Go Live: Instant</p>
-            <button
-                className={`w-full ${btnColor} text-black rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all font-semibold`}
+            <Link href={"/login"}
+                className={`w-full ${btnColor} text-black rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all font-semibold text-center`}
             >
                 {type === "Pro" ? "Book a demo" : "Start for Free"}
-            </button>
+            </Link>
         </div>
     );
 };

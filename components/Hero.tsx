@@ -1,8 +1,9 @@
-import React from 'react';
-import { FaShopify } from 'react-icons/fa';
-import Image from 'next/image';
+import React from "react";
+import { FaShopify } from "react-icons/fa";
+import Image from "next/image";
 import img from "../assets/jackets.png";
 import img2 from "../assets/fleecce.jpg";
+import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -21,12 +22,18 @@ const Hero = () => {
                     </p>
                 </div>
                 <div className="flex items-center gap-5 max-md:flex-col max-lg:w-full buttons">
-                    <button className="bg-orange-button rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full">
+                    <Link
+                        href="/products"
+                        className="bg-orange-button rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full"
+                    >
                         Try for Free
-                    </button>
-                    <button className="border border-black rounded-xl p-5 px-8 text-md hover:opacity-90 transition-all max-lg:w-full hover:bg-gray-grid-1 hover:text-white">
+                    </Link>
+                    <Link
+                        href="/pricing"
+                        className="border border-black rounded-xl p-5 px-8 text-md hover:opacity-90 transition-all max-lg:w-full hover:bg-gray-grid-1 hover:text-white"
+                    >
                         Book a demo
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className="relative">
@@ -39,6 +46,6 @@ const Hero = () => {
             </div>
         </main>
     );
-}
+};
 
 export default Hero;
