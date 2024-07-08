@@ -2,7 +2,7 @@ import fleecce2 from "../../assets/fleecce2.png";
 import { FaShopify } from "react-icons/fa";
 import Merchandising from "@/components/Merchandising";
 import Footer from "@/components/Footer";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import collection from "../../assets/collection.jpeg";
 import { BiGridHorizontal } from "react-icons/bi";
 import editorial from "../../assets/editorial.jpeg";
@@ -19,14 +19,14 @@ const Perk = () => {
                 <div className="flex flex-col gap-20 justify-center">
                     <div className="flex items-center gap-2 bg-gray-grid-3 w-fit p-3 rounded-xl">
                         <FaShopify size={20} />
-                        Made for shopify
+                        Made for Shopify
                     </div>
                     <div className="flex flex-col gap-2">
                         <h1 className="xl:text-6xl text-3xl font-extrabold max-xl:text-center">
                             Where Brand meets Performance.
                         </h1>
                         <p className="text-gray-400 max-xl:text-[14px] max-xl:text-center xl:max-w-[300px] font-extrabold">
-                            Manage Shopify collections like it's your digital flagship store.
+                            Manage Shopify collections like it&apos;s your digital flagship store.
                         </p>
                     </div>
                     <button className="bg-orange-button w-fit text-black rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full">
@@ -35,7 +35,7 @@ const Perk = () => {
                 </div>
             </div>
             <div className="xl:p-14 bg-white rounded-3xl min-w-full">
-                <img src={fleecce2.src} className="shadow-2xl rounded-3xl min-w-full" />
+                <Image src={fleecce2} alt="Fleece Image" className="shadow-2xl rounded-3xl min-w-full" />
             </div>
         </div>
     );
@@ -70,13 +70,13 @@ const CustomPerk = ({
                 </div>
             </div>
             <div className={`xl:p-14 bg-white rounded-3xl min-w-full`}>
-                <img src={img.src} className="shadow-2xl rounded-3xl min-w-full" />
+                <Image alt={title} src={img} className="shadow-2xl rounded-3xl min-w-full" />
             </div>
         </div>
     ) : (
         <div className="xl:w-[1400px] grid xl:grid-cols-custom-3 gap-10 products">
             <div className={`xl:p-14 bg-white rounded-3xl min-w-full`}>
-                <img src={img.src} className="shadow-2xl rounded-3xl min-w-full" />
+                <Image alt={title} src={img} className="shadow-2xl rounded-3xl min-w-full" />
             </div>
             <div
                 className={`bg-gray-grid-1 text-white rounded-3xl xl:p-10 p-5 py-10 flex flex-col h-full justify-center gap-10`}
@@ -117,9 +117,7 @@ const Products = () => {
                 id={3}
                 icon={<FaArrowsTurnRight className="text-orange-button" size={100} />}
                 title="Strategic Merchandising"
-                description="Set sorting rules for all your collection pages at once. Boost products up, or bury them at the bottom.  Rules can be set based on collections, tags, and data.
-
-                "
+                description="Set sorting rules for all your collection pages at once. Boost products up, or bury them at the bottom. Rules can be set based on collections, tags, and data."
                 img={boost}
             />
             <CustomPerk

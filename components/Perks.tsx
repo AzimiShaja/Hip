@@ -1,8 +1,10 @@
 import React from "react";
 import { FaSitemap } from "react-icons/fa6";
+import Image from "next/image";
 import fleecce2 from "../assets/fleecce2.png";
 import { PiStrategy } from "react-icons/pi";
 import { SiGoogleanalytics } from "react-icons/si";
+
 const Label = ({ text, icon }: { text: string; icon: any }) => {
     return (
         <div className="flex bg-gray-grid-3 p-3 hover:scale-110 transition-all items-center gap-3 w-full rounded-xl cursor-default">
@@ -11,6 +13,7 @@ const Label = ({ text, icon }: { text: string; icon: any }) => {
         </div>
     );
 };
+
 const Perks = () => {
     return (
         <div className="xl:w-[1400px] w-full grid xl:grid-cols-custom-1 perks gap-5 py-10">
@@ -20,7 +23,7 @@ const Perks = () => {
                         The App for Fashion Merchandising
                     </h1>
                     <p className="text-gray-400 max-xl:text-[14px] max-xl:text-center">
-                        Hip lets you manage your collection pages like the world's best ecommerce teams.
+                        Hip lets you manage your collection pages like the world&apos;s best ecommerce teams.
                     </p>
                 </div>
                 <div className="flex flex-col gap-3 w-full">
@@ -38,13 +41,15 @@ const Perks = () => {
                     />
                 </div>
             </div>
-            <div className="xl:p-10 bg-white rounded-3xl min-w-full">
-                <img
-                    src={fleecce2.src}
+            <div className="xl:p-specify Cell cycle , mitoses briefly bg-white rounded-3xl min-w-full">
+                <Image
+                    src={fleecce2}
                     className="shadow-2xl rounded-3xl min-w-full xl:hover:scale-110 duration-1000"
+                    alt="Fleece"
                 />
             </div>
         </div>
     );
 };
+
 export default Perks;

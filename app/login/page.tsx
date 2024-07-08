@@ -28,7 +28,7 @@ const Login = () => {
                         Login
                     </button>
                     <p className="text-center">
-                        Don't have an account?{" "}
+                        Don&apos;t have an account?{" "}
                         <Link className="text-orange-button" href="/signup">
                             Register
                         </Link>{" "}

@@ -1,13 +1,13 @@
 "use client";
 import { QuoteIcon } from "lucide-react";
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 import testimonial1 from "../assets/testimonail1.jpeg";
 import testimonial2 from "../assets/testimonial2.jpeg";
 import testimonial3 from "../assets/testimonial3.jpeg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { StaticImageData } from "next/image";
 
 const Testimonial = ({
     testimonial,
@@ -28,7 +28,9 @@ const Testimonial = ({
                 <QuoteIcon className="text-gray-grid-3" size={90} />
                 <h1 className="xl:text-4xl text-xl font-bold text-center">{testimonial}</h1>
             </div>
-            <img src={bg.src} alt={bg.src} className="rounded-3xl xl:max-w-[300px]" />
+            <div className="relative xl:max-w-[300px] w-full h-[300px]">
+                <Image src={bg} alt="Testimonial Background" className="rounded-3xl" layout="fill" objectFit="cover" />
+            </div>
             <div className="bg-white rounded-3xl xl:p-10 p-5 py-10 xl:max-w-[300px] h-[300px] flex items-center justify-center">
                 <h1 className="xl:text-3xl font-bold">{title}</h1>
             </div>
