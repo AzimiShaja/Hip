@@ -8,10 +8,16 @@ const Merchandising = () => {
                 Merchandising made simple.
             </h1>
             <div className="flex items-center gap-5 max-xl:flex-col max-xl:w-full">
-                <Link href="/products" className="bg-gray-grid-1 text-white rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full">
+                <Link
+                    href="/products"
+                    className="bg-gray-grid-1 text-white rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full text-center"
+                >
                     Try for Free
                 </Link>
-                <Link href="/pricing" className="border border-black rounded-xl p-5 px-8 text-md hover:opacity-90 transition-all max-lg:w-full hover:bg-gray-grid-1 hover:text-white">
+                <Link
+                    href="/pricing"
+                    className="border border-black rounded-xl p-5 px-8 text-md hover:opacity-90 transition-all max-lg:w-full hover:bg-gray-grid-1 hover:text-white text-center"
+                >
                     Book a demo
                 </Link>
             </div>
