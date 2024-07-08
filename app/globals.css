@@ -21,7 +21,7 @@
 main > div,
 .products > div,
 .products > div > div,
-.pricing {
+.pricing, .login {
     animation: open 1s;
     /* transform: translateY(300px); */
 }
