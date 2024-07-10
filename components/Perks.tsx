@@ -41,7 +41,7 @@ const Perks = () => {
                     />
                 </div>
             </div>
-            <div className="xl:p-specify Cell cycle , mitoses briefly bg-white rounded-3xl min-w-full">
+            <div className="xl:p-10 bg-white rounded-3xl min-w-full">
                 <Image
                     src={fleecce2}
                     className="shadow-2xl rounded-3xl min-w-full xl:hover:scale-110 duration-1000"
