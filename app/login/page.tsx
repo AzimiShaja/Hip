@@ -13,8 +13,8 @@ const Login = () => {
                         <h1 className="font-extrabold text-3xl md:text-5xl">Account Login</h1>
                         <h1 className="font-bold text-gray-400">Login into your account</h1>
                     </div>
-                    <Input className="rounded-xl py-6" placeholder="Email / Username" />
-                    <Input className="rounded-xl py-6" placeholder="Password" />
+                    <Input type="email" required className="rounded-xl py-6" placeholder="Email / Username" />
+                    <Input type="password" required className="rounded-xl py-6" placeholder="Password" />
                     <div className="flex items-center space-x-2 my-4 w-full">
                         <Checkbox id="terms" className="rounded-[4px] bg-white" />
                         <label
