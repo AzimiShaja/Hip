@@ -11,6 +11,7 @@ import international from "../../assets/international.jpg";
 import { GiClick } from "react-icons/gi";
 import { FaArrowsTurnRight } from "react-icons/fa6";
 import { TbWorld } from "react-icons/tb";
+import Link from "next/link";
 
 const Perk = () => {
     return (
@@ -29,9 +30,9 @@ const Perk = () => {
                             Manage Shopify collections like it&apos;s your digital flagship store.
                         </p>
                     </div>
-                    <button className="bg-orange-button w-fit text-black rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full">
+                    <Link href="/login" className="bg-orange-button w-fit text-black rounded-xl p-5 px-10 text-md hover:opacity-90 transition-all max-lg:w-full">
                         Try for Free
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className="xl:p-14 bg-white rounded-3xl min-w-full">
